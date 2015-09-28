@@ -1,0 +1,343 @@
+
+
+@media(min-width:500px){
+html {
+max-width: 320px;
+background-color: #000;
+margin-left: 40%;
+margin-top: 15px;
+}h3.mui-text-left.brand.mui-text-headline {
+margin-left: -13px!important;
+width: 109%!important;
+}
+
+/* CSS declarations go here */
+body {
+padding: 13px;
+min-height: 568px;
+overflow: scroll;
+position:relative;
+
+}
+}h3.mui-text-left.brand.mui-text-headline {
+background-color: #000;
+margin: -28px;
+margin-top: -13px;
+margin-bottom: 14px;
+background-color: #213655;
+padding: 15px;
+color: #FFF;
+}h3.mui-text-left.brand.mui-text-headline i {
+margin-right: 10px;
+}a {
+color: #213655!important;
+}
+.mui-btn-primary, .mui-btn[data-mui-color="primary"] {
+color: #FFF;
+background-color: #213655;
+}
+.toggler{
+display:none;
+}
+h3.mui-text-left.brand.mui-text-headline a {
+color: #FFF!important;
+text-decoration: none!important;
+}
+@media(max-width:600px){
+body {
+position: relative;
+min-height: 100vh;
+}
+    .checkinList {
+max-height: 67vh!important;
+overflow: scroll;
+margin-top: 10px;
+}
+i.fa.fa-caret-left {
+font-size: 36px;
+position: absolute;
+top: 8px!important;
+color: #A5A5A5!important;
+}
+}
+.checkInBox {
+position: absolute;
+bottom: 25px;
+width: 100%;
+padding:10px;
+left: 0px;
+}h2.mui-text-subhead.mui-text-center {
+text-transform: uppercase;
+}
+.checkinOptions .mui-form-group {
+background-color: #F5F5F5;
+padding: 12px;
+border: solid 1px #D3D3D3;
+}
+.checkinOptions .mui-form-group {
+background-color: #F5F5F5;
+padding: 12px;
+border: solid 1px #D3D3D3;
+margin-bottom: -1px;
+}
+a.active.list-group-item {
+background-color: #F5F5F5!important;
+border: solid 1px #D3D3D3!important;
+border-bottom: none!important;
+margin-bottom: -11px;
+}h3.mui-text-left.brand.mui-text-headline {
+padding-top: 23px!important;
+padding-left: 23px!important;
+}
+.checkinList .mui-panel {
+padding: 8px;
+margin: 9px;
+margin-top: 0px;
+}body {
+background-color: #F5F5F5!important;
+}h2.mui-text-subhead.mui-text-center {
+text-transform: capitalize;
+}
+h3.mui-text-left.brand.mui-text-headline {
+width: 100%;
+left: 1px;
+margin-left: 0px;
+}
+.checkInBox {
+background-color: #DDD;
+bottom: -11px!important;
+border-top: solid 1px #D3D3D3;
+}
+.checkinList {
+max-height: 355px!important;
+overflow: scroll;
+margin-top: 10px;
+}
+.checkinList {
+background-color: rgba(0, 0, 0, 0);
+}
+h3.mui-text-left.brand.mui-text-headline {
+text-align: center!important;
+}
+
+
+.checkinList {
+max-height: 375px!important;
+overflow: scroll;
+margin-top: 10px;
+}
+@media (min-width: 500px){
+html {
+max-width: 320px;
+/*background: url('/gradient.jpg');*/
+margin-left: 0px;
+margin-top: 15px;
+width: 100%;
+text-align: center!important;
+margin-left: 40%;
+margin-right: 8%;
+}
+}
+.mui-form-group {
+display: block;
+width: 100%;
+padding-top: 15px;
+margin-bottom: 13px;
+position: relative;
+}i.fa.fa-caret-left {
+font-size: 36px;
+position: absolute;
+top: 33px;
+color: #A5A5A5;
+}a.projectRequirements {
+position: absolute;
+bottom: 15px;
+text-align: left!important;
+width: 100%;
+left: 1px;
+color: #FFF!important;
+padding: 13px;
+}
+.checkInBox {
+background-color: #DDD;
+bottom: -11px!important;
+border-top: solid 1px #D3D3D3;
+height: 104px;
+background-color: #FFF;
+}
+.checkinList {
+max-height: 341px!important;
+overflow: scroll;
+margin-top: 10px;
+}
+.checkinList {
+max-height: 358px!important;
+overflow: scroll;
+margin-top: -7px;
+}
+.checkInBox {
+background-color: #DDD;
+bottom: -11px!important;
+border-top: solid 1px #D3D3D3;
+height: 104px;
+background-color: #213655;
+}
+.mui-btn-primary, .mui-btn[data-mui-color="primary"] {
+color: #FFF;
+background-color: #AAA;
+}
+.mui-btn-primary, .mui-btn[data-mui-color="primary"] {
+color: #213655!important;
+background-color: #34527E;
+}div#checkInNow {
+color: #FFF!important;
+}
+.checkInBox {
+border-top: solid 1px #2A3F5E!important;
+}
+.mui-btn-primary, .mui-btn[data-mui-color="primary"] {
+color: #FFF!important;
+background-color: #34527E;
+}
+.checkinList {
+max-height: 358px!important;
+overflow: scroll;
+margin-top: 8px;
+padding-top: 0px!important;
+}
+.checkinList .mui-panel {
+padding: 8px;
+margin: 9px;
+margin-top: -6px;
+}
+.checkInBox {
+background-color: #DDD;
+bottom: -13px!important;
+border-top: solid 1px #D3D3D3;
+height: 104px;
+background-color: #213655;
+}
+.checkInBox {
+background-color: #DDD;
+bottom: -13px!important;
+border-top: solid 1px #D3D3D3;
+height: 133px;
+background-color: #213655;
+}
+.checkinList {
+max-height: 358px!important;
+overflow: scroll;
+margin-top: 8px;
+padding-top: 0px!important;
+/* border: solid 1px; */
+height: 341px!important;
+}i.fa.fa-caret-left {
+font-size: 36px;
+position: absolute;
+top: 20px!important;
+color: #A5A5A5;
+}
+.mui-form-group {
+display: block;
+width: 100%;
+padding-top: 7px;
+margin-bottom: 13px;
+position: relative;
+}
+
+.checkinList {
+max-height: 358px!important;
+overflow: scroll;
+margin-top: 8px;
+padding-top: 0px!important;
+height: 313px!important;
+}
+.mui-text-caption.mui-text-center.activeSeekers {
+position: fixed;
+bottom: 9px;
+left: 9px;
+color: #FFF!important;
+background-color: #000;
+padding: 10px;
+}
+.mui-text-caption.hidden-xs.mui-text-center.activeSeekers.right {
+right: 8px;
+left: auto;
+}
+.locationInput.mui-form-group .single {
+margin-top: 16px!important;
+display: block;
+}
+.locationInput .selectize-dropdown.single {
+position: relative;
+top: -22px!important;
+}
+.locationInput .selectize-dropdown.single {
+position: absolute;
+top: 15px!important;
+}
+.mui-text-caption.hidden-xs.mui-text-center.activeSeekers.right {
+right: auto;
+left: 10px;
+bottom: 49px;
+}
+.mui-text-caption.mui-text-center.activeSeekers {
+position: fixed;
+bottom: 6px;
+left: 9px;
+color: #FFF!important;
+background-color: #203047;
+padding: 10px;
+border: solid 1px #364F72;
+}a.mui-text-button.mui-text-white {
+color: #FFF!important;
+position: relative;
+top: 5px;
+}
+.login-display-name {
+color: #FFF;
+}
+.profileForm div#login-buttons-facebook {
+margin-top: -11px;
+margin-bottom: 13px;
+}
+.trending-item.mui-text-caption.mui-col-xs-4.mui-text-white {
+max-width: 100%;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+.trending-item.mui-text-caption.mui-col-xs-4.mui-text-white {
+max-width: 100%;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+background-color: #213655;
+margin: 2px;
+padding: 3px;
+width: auto;
+display: inline-table;
+font-size: 10px;
+}
+.trending .mui-text-subhead.mui-text-white.mui-text-left {
+position: relative;
+left: -12px;
+text-transform: uppercase;
+font-size: 10px;
+}
+.trending {
+padding: 14px;
+margin-top: -21px;
+}body {
+transition: ease-in .3s;
+}
+.mui-text-body2 {
+line-height: 1.2;
+font-size: 13px;
+}
+.mui-text-body2 {
+line-height: 1.2;
+font-size: 13px;
+margin-bottom: 3px;
+margin-top: 3px;
+}

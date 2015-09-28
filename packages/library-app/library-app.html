@@ -1,0 +1,290 @@
+<template name="libraryApp">
+    <h3 class="mui-text-left brand mui-text-headline"><a href="/"><i class="fa fa-gg-circle"></i>Workspaces</a></h3>
+    <div class=" mui-container-fluid text-left">
+
+        <div id="mui-panel">
+
+            {{#if activePeeps}}
+                {{>checkinList}}
+            {{else}}
+                {{>darkTheme}}
+                {{> Template.dynamic template=content}}
+
+            {{/if}}
+        </div>
+    </div>
+</template>
+
+<template name="appHome">
+    <!--<div class="text-center">-->
+        <!--{{>loginButtons}}-->
+    <!--</div>-->
+    {{>appCheckin}}
+
+</template>
+
+
+<template name="appCheckin">
+    <div class="location mui-text-center mui-text-white mui-text-caption">
+        {{#if location}}<i class="fa fa-map-marker"></i> {{location}}{{/if}}
+    </div>
+    <h2 class="mui-text-subhead mui-text-center">I'm Here To...</h2>
+    <div class="checkinOptions">
+        <a href="/action/find" data-target="find" class="list-group-item">Find...</a>
+        <a href="/action/learn-about" data-target="learn-about" class="list-group-item">Learn about...</a>
+        <a href="/action/get-help-with" data-target="get-help-with" class="list-group-item">Get help with...</a>
+        <a href="/action/help-with" data-target="help-with" class="list-group-item">Help with...</a>
+        <a href="/action/plan-for" data-target="plan-for" class="list-group-item">Plan for...</a>
+        <!--<a href="#" class="list-group-item">...</a>-->
+    </div>
+    <br>
+    {{#if trending}}
+    <div class="trending">
+        <div class="mui-text-subhead mui-text-white mui-text-left">Trending</div>
+       <div class="row">
+        {{#each trending}}
+            {{#if worthIt}}
+               {{#if _id}} <div style="cursor:pointer" class="trending-item mui-text-caption mui-col-xs-4 mui-text-white">{{_id}}</div>{{/if}}
+            {{/if}}
+        {{/each}}
+       </div>
+    </div>
+        {{/if}}
+
+    <div class="checkInBox mui-text-center ">
+        <div class="mui-text-caption mui-text-white"><i class="fa fa-circle"></i> {{activeSeekers}} Active Check-ins</div>
+        <!--<div class="mui-text-caption mui-text-white"><i class="fa fa-circle"></i> {{activeSeekersTotal}} Active Checkins - all time </div>-->
+        <div class="mui-text-buttton mui-text-center"><a class="mui-text-button mui-text-white" href="/action/whosHereNow">See Who's Here Now</a></div>
+        <br>
+
+    </div>
+</template>
+
+<template name="find">
+    <h2 class="mui-text-subhead mui-text-center">I'm Here To...</h2>
+    <div class="checkinOptions">
+        <a href="/action/find" data-target="find" class="active list-group-item">Find...</a>
+        {{>actionDefiner}}
+        <a href="/action/learn-about" data-target="learn-about" class="list-group-item">Learn about...</a>
+        <a href="/action/get-help-with" data-target="get-help-with" class="list-group-item">Get help with...</a>
+        <a href="/action/help-with" data-target="help-with" class="list-group-item">Help with...</a>
+        <a href="/action/plan-for" data-target="plan-for" class="list-group-item">Plan for...</a>
+        <!--<a href="#" class="list-group-item">...</a>-->
+    </div>
+
+</template>
+
+<template name="learn-about">
+    <h2 class="mui-text-subhead mui-text-center">I'm Here To...</h2>
+    <div class="checkinOptions">
+        <a href="/action/find" data-target="find" class="list-group-item">
+            Find...
+        </a>
+        <a href="/action/learn-about" data-target="learn-about" class="active list-group-item">Learn about...</a>
+        {{>actionDefiner}}
+        <a href="/action/get-help-with" data-target="get-help-with" class="list-group-item">Get help with...</a>
+        <a href="/action/help-with" data-target="help-with" class="list-group-item">Help with...</a>
+        <a href="/action/plan-for" data-target="plan-for" class="list-group-item">Plan for...</a>
+        <!--<a href="#" class="list-group-item">...</a>-->
+    </div>
+</template>
+
+<template name="get-help-with">
+    <h2 class="mui-text-subhead mui-text-center">I'm Here To...</h2>
+    <div class="checkinOptions">
+        <a href="/action/find" data-target="find" class="list-group-item">
+            Find...
+        </a>
+        <a href="/action/learn-about" data-target="learn-about" class="list-group-item">Learn about...</a>
+        <a href="/action/get-help-with" data-target="get-help-with" class="active list-group-item">Get help with...</a>
+        {{>actionDefiner}}
+        <a href="/action/help-with" data-target="help-with" class="list-group-item">Help with...</a>
+        <a href="/action/plan-for" data-target="plan-for" class="list-group-item">Plan for...</a>
+        <!--<a href="#" class="list-group-item">...</a>-->
+    </div>
+
+</template>
+
+<template name="help-with"><h2 class="mui-text-subhead mui-text-center">I'm Here To...</h2>
+
+    <div class="checkinOptions">
+        <a href="/action/find" data-target="find" class="list-group-item">
+            Find...
+        </a>
+        <a href="/action/learn-about" data-target="learn-about" class="list-group-item">Learn about...</a>
+        <a href="/action/get-help-with" data-target="get-help-with" class="list-group-item">Get help with...</a>
+
+        <a href="/action/help-with" data-target="help-with" class="active list-group-item">Help with...</a>
+        {{>actionDefiner}}
+        <a href="/action/plan-for" data-target="plan-for" class="list-group-item">Plan for...</a>
+        <!--<a href="#" class="list-group-item">...</a>-->
+    </div>
+</template>
+
+<template name="plan-for">
+    <h2 class="mui-text-subhead mui-text-center">I'm Here To...</h2>
+    <div class="checkinOptions">
+        <a href="/action/find" data-target="find" class="list-group-item">
+            Find...
+        </a>
+        <a href="/action/learn-about" data-target="learn-about" class="list-group-item">Learn about...</a>
+        <a href="/action/get-help-with" data-target="get-help-with" class="list-group-item">Get help with...</a>
+
+        <a href="/action/help-with" data-target="help-with" class="list-group-item">Help with...</a>
+
+        <a href="/action/plan-for" data-target="plan-for" class="active list-group-item">Plan for...</a>
+        {{>actionDefiner}}
+        <!--<a href="#" class="list-group-item">...</a>-->
+    </div>
+</template>
+
+
+<template name="actionDefiner">
+    <!--<h2 class="mui-text-subhead mui-text-center"><a href="/"><i class="fa fa-arrow-left mui-pull-left"></i> </a>{{title}}....</h2>-->
+    <div class="mui-form-group">
+        <input id="autocomplete" placeholder="...">
+    </div>
+    <div class="checkInBox">
+        <div style="width:100%" id="checkInNow" class="mui-btn mui-btn-block mui-btn-primary"><i class="fa fa-check"></i> Check In Now</div>
+        <div class="mui-text-caption mui-text-center"><a class="mui-text-button mui-text-white" href="/action/whosHereNow">See Who's Here Now</a></div>
+        <!--<div class="mui-text-caption mui-text-center"><a href="#">See Who's Here Now</a></div>-->
+    </div>
+  {{>darkTheme}}
+</template>
+
+
+<template name="profileForm">
+
+    <!--<h2 class="mui-text-subhead mui-text-left"><a href="/action/{{intention}}"><i class="fa fa-arrow-left mui-pull-left"></i></a>  </h2>-->
+    <div class="mui-text-subhead">
+        Do You Want Others To Join You?
+    </div>
+    <div class="mui-text-caption">
+        The Library is a great place to meet other people who are learning the same things, reading the same things, or can helpwith your project or interest.
+    </div>
+    <br>
+    <form class="profileForm">
+        {{#if currentUser}}
+            {{else}}
+            {{>loginButtons}}
+        {{/if}}
+        {{#if currentUser}}
+        <div class="mui-form-group">
+
+            <label>What's your first name?</label>
+            <!--{{currentUser.services.facebook.first_name}}-->
+            <input name="name" value="{{myProfile.first_name}}" class="mui-form-control">
+        </div>
+            {{else}}
+            <div class="mui-form-group">
+
+                <label>What's your first name?</label>
+
+                <input name="name" value="{{myProfile.first_name}}" class="mui-form-control">
+            </div>
+        {{/if}}
+        <div class="locationInput mui-form-group">
+            <label>Where are you sitting?</label>
+            <input id="location" name="location" class="" placeholder="enter location..">
+        </div>
+        <div class="mui-form-group">
+            <label>Note or Comment (140 chars)</label>
+            <textarea maxlength="140" name="note" class="mui-form-control"></textarea>
+        </div>
+
+        <!--<input  name="user" value="{{currentUser._id}}">-->
+        <div class="checkInBox">
+            <button type="submit" style="width:100%" id="checkInNow" class="mui-btn mui-btn-block mui-btn-primary"><i class="fa fa-check"></i> Meet with Others</button>
+            <div class="mui-text-caption mui-text-center"><a href="/">No Thanks</a></div>
+        </div>
+    </form>
+
+    <style>
+        body {
+            background-color: #F5F5F5!important;
+        }
+    </style>
+</template>
+
+
+<template name="checkinList">
+    <div class="mui-text-subhead mui-text-center"><a href="/" class="pull-left" style="cursor:pointer" onclick="Session.set('activeChecks',false)">
+        <i class="fa fa-caret-left"></i></a>
+        <!--<span style="text-transform:capitalize">{{intention}}</span>-->
+        {{cat}}</div>
+    <div class="mui-text-caption mui-text-center">{{checkinCount}} check-ins ( in the last hour )</div>
+    <div class="checkinList">
+        <br>
+        {{#each checkins}}
+            <div class="mui-panel">
+                <div class="mui-text-body1"><b><i class="fa fa-user"></i> {{data.name}}</b></div>
+                <div class="mui-text-body2">
+                    {{data.note}}
+                </div>
+                <!--<div class="mui-text-caption studying"><b>Studying:</b> {{data.studying}}</div>-->
+                <div class="mui-text-caption"><b>Location:</b>  {{#if data.location}}{{data.location}}{{else}}C-44{{/if}}</div>
+                <!--<pre>{{raw}}</pre>-->
+
+            </div>
+        {{/each}}
+    </div>
+    {{#if thisUser}}
+        {{else}}
+        {{/if}}
+    <div class="checkInBox">
+        <a href="/action/profileForm" onclick="Session.set('activeChecks',false)" style="width:100%;color:#fff!important" id="checkInNow" class="mui-btn mui-btn-block mui-btn-primary"><i class="fa fa-check"></i> Check In Now</a>
+        <!--<div class="mui-text-caption mui-text-center"><a href="#">See Who's Here Now</a></div>-->
+    </div>
+    <style>
+        body {
+            background-color: #F5F5F5!important;
+        }
+    </style>
+</template>
+
+<template name="whosHereNow">
+    <div class="mui-text-subhead mui-text-center"><a href="/" class="pull-left" style="cursor:pointer" onclick="Session.set('activeChecks',false)">
+        <i class="fa fa-caret-left"></i></a>
+        <!--<span style="text-transform:capitalize">{{intention}}</span>-->
+       All Active </div>
+    <div class="mui-text-caption mui-text-center">{{checkinCount}} check-ins ( in the last hour )</div>
+    <div class="checkinList">
+        <br>
+        {{#each checkins}}
+            <div class="mui-panel">
+                <div class="mui-text-body1"><b><i class="fa fa-user"></i> {{data.name}}</b></div>
+                <div class="mui-text-body2">
+                    {{data.note}}
+                </div>
+                <!--<div class="mui-text-caption studying"><b>Studying:</b> {{data.studying}}</div>-->
+                <div class="mui-text-caption"><b>Location:</b>  {{#if data.location}}{{data.location}}{{else}}C-44{{/if}}</div>
+                <!--<pre>{{raw}}</pre>-->
+
+            </div>
+        {{/each}}
+    </div>
+    {{#if thisUser}}
+    {{else}}
+    {{/if}}
+    <div class="checkInBox">
+        <a href="/action/profileForm" onclick="Session.set('activeChecks',false)" style="width:100%;color:#fff!important" id="checkInNow" class="mui-btn mui-btn-block mui-btn-primary"><i class="fa fa-check"></i> Check In Now</a>
+        <!--<div class="mui-text-caption mui-text-center"><a href="#">See Who's Here Now</a></div>-->
+    </div>
+    <style>
+        body {
+            background-color: #F5F5F5!important;
+        }
+    </style>
+</template>
+
+
+
+<template name="darkTheme">
+    <style>
+        body {
+            background-color: #203047!important;
+        }h2.mui-text-subhead.mui-text-center {
+             color: #FFF;
+         }
+    </style>
+</template>
