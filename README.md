@@ -1,8 +1,8 @@
 ### Library App
 
-url: <a href="http://libraryapp-51934.onmodulus.net/">http://libraryapp-51934.onmodulus.net</a>
-developer: Harry Ward
-db: mongodb://USERNAME:PASSWORD@apollo.modulusmongo.net:27017/T9ygimip
+- url: <a href="http://libraryapp-51934.onmodulus.net/">http://libraryapp-51934.onmodulus.net</a>
+- developer: Harry Ward
+- db: mongodb://USERNAME:PASSWORD@apollo.modulusmongo.net:27017/T9ygimip
 
 ### Phase 2
 Additional Questions:
